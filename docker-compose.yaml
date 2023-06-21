@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  jazzer:
+    container_name: "jazzer"
+    build:
+      context: ./jazzer-interactive-fuzz
+    command: /app/jazzer --cp='/fuzzing/example.jar' --target_class=org.example.MainFuzzTest
+    volumes:
+      - ./build/libs/example-java-1.0-SNAPSHOT.jar:/fuzzing/example.jar
