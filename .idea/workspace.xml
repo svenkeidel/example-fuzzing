@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08856948-bb1b-417c-b6af-05f5ce0ed37f" name="Changes" comment="clean up">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="08856948-bb1b-417c-b6af-05f5ce0ed37f" name="Changes" comment="use cifuzz/jazzer docker image">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +32,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
@@ -71,7 +73,7 @@
       <workItem from="1687331772190" duration="979000" />
       <workItem from="1687332757938" duration="95000" />
       <workItem from="1687332859799" duration="45000" />
-      <workItem from="1687332911225" duration="646000" />
+      <workItem from="1687332911225" duration="865000" />
     </task>
     <task id="LOCAL-00001" summary="clean up">
       <created>1687333002104</created>
@@ -80,7 +82,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687333002104</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="use cifuzz/jazzer docker image">
+      <created>1687333602865</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1687333602865</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -88,6 +97,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="clean up" />
-    <option name="LAST_COMMIT_MESSAGE" value="clean up" />
+    <MESSAGE value="use cifuzz/jazzer docker image" />
+    <option name="LAST_COMMIT_MESSAGE" value="use cifuzz/jazzer docker image" />
   </component>
 </project>
