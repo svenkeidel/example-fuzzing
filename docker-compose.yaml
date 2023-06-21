@@ -5,6 +5,16 @@ services:
     container_name: "jazzer"
     build:
       context: ./jazzer-interactive-fuzz
-    command: /app/jazzer --cp='/fuzzing/example.jar' --target_class=org.example.MainFuzzTest
+    command: >
+      /app/jazzer --cp='/fuzzing/example.jar'
+                  --autofuzz=org.example.Webserver::checkUrl
+                  --autofuzz_ignore=java.lang.Exception
+                  --coverage_report=coverage
+                  -max_len=20
+                  -max_total_time=5
+                  -dict=url_dict
+                  WebserverCorpus
     volumes:
-      - ./build/libs/example-java-1.0-SNAPSHOT.jar:/fuzzing/example.jar
+      - ./build/libs/example-java-1.0-SNAPSHOT.jar:/fuzzing/example.jar:ro
+      - ./build/resources/main/WebserverCorpus/:/fuzzing/WebserverCorpus:ro
+      - ./build/resources/main/url_dict:/fuzzing/url_dict:ro
