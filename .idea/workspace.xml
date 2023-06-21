@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08856948-bb1b-417c-b6af-05f5ce0ed37f" name="Changes" comment="use cifuzz/jazzer docker image">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="08856948-bb1b-417c-b6af-05f5ce0ed37f" name="Changes" comment="remove custom docker script for jazzer">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +32,11 @@
     </system>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -49,7 +55,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
+    "full.screen.before.presentation.mode": "false",
+    "git-widget-placeholder": "merge-corpora",
     "last_opened_file_path": "/home/sven/example-fuzzing",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -60,6 +67,11 @@
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "TEXT"
+    ]
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -73,7 +85,8 @@
       <workItem from="1687331772190" duration="979000" />
       <workItem from="1687332757938" duration="95000" />
       <workItem from="1687332859799" duration="45000" />
-      <workItem from="1687332911225" duration="865000" />
+      <workItem from="1687332911225" duration="3377000" />
+      <workItem from="1687336936596" duration="1124000" />
     </task>
     <task id="LOCAL-00001" summary="clean up">
       <created>1687333002104</created>
@@ -89,7 +102,21 @@
       <option name="project" value="LOCAL" />
       <updated>1687333602865</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add a README">
+      <created>1687333801588</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1687333801588</updated>
+    </task>
+    <task id="LOCAL-00004" summary="remove custom docker script for jazzer">
+      <created>1687333905274</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1687333905274</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -98,6 +125,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="clean up" />
     <MESSAGE value="use cifuzz/jazzer docker image" />
-    <option name="LAST_COMMIT_MESSAGE" value="use cifuzz/jazzer docker image" />
+    <MESSAGE value="add a README" />
+    <MESSAGE value="remove custom docker script for jazzer" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove custom docker script for jazzer" />
   </component>
 </project>

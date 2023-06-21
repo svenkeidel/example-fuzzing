@@ -12,8 +12,11 @@ services:
       -max_len=20
       -max_total_time=5
       -dict=url_dict
+      -merge=1
       WebserverCorpus
+      WebserverCorpusMinimized
     volumes:
-      - ./build/libs/example-java-1.0-SNAPSHOT.jar:/fuzzing/example.jar:ro
-      - ./build/resources/main/WebserverCorpus/:/fuzzing/WebserverCorpus:ro
-      - ./build/resources/main/url_dict:/fuzzing/url_dict:ro
+      - ./build/libs/example-fuzzing-1.0-SNAPSHOT.jar:/fuzzing/example.jar:ro
+      - ./build/resources/main/url_dict:/fuzzing/url_dict
+      - ./build/resources/main/WebserverCorpus/:/fuzzing/WebserverCorpus
+      - ./build/resources/main/WebserverCorpusMinimized/:/fuzzing/WebserverCorpusMinimized
