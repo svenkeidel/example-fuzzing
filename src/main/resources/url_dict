@@ -1,3 +1,6 @@
 "ftp"
 "http"
 "https"
+"file"
+":"
+"/"

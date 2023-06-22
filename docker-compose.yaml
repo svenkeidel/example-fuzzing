@@ -6,14 +6,18 @@ services:
     image: "cifuzz/jazzer"
     command: >
       --cp='/fuzzing/example.jar'
-      --autofuzz=org.example.Webserver::checkUrl
-      --autofuzz_ignore=java.lang.Exception
-      --coverage_report=coverage
+      --target_class='org.example.WebserverFuzzer'
+      --coverage_report=coverage.txt
+      --coverage_dump=coverage.exec
+      --instrumentation_includes=java.**:org.example.*
+      --instrumentation_excludes=org.example.WebserverFuzzer:java.lang.Object
       -max_len=20
-      -max_total_time=5
+      -max_total_time=60
       -dict=url_dict
+      -merge_control_file=merge_control
       WebserverCorpus
     volumes:
-      - ./build/libs/example-java-1.0-SNAPSHOT.jar:/fuzzing/example.jar:ro
-      - ./build/resources/main/WebserverCorpus/:/fuzzing/WebserverCorpus:ro
-      - ./build/resources/main/url_dict:/fuzzing/url_dict:ro
+      - ./build/libs/example-fuzzing-1.0-SNAPSHOT.jar:/fuzzing/example.jar:ro
+      - ./build/merge_control:/fuzzing/merge_control:ro
+      - ./build/resources/main/WebserverCorpus/:/fuzzing/WebserverCorpus
+      - ./build/resources/main/url_dict:/fuzzing/url_dict
